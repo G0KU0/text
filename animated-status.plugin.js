@@ -1,3 +1,5 @@
+//META{"name":"AnimatedStatus","source":"https://raw.githubusercontent.com/G0KU0/text/main/animated-status.plugin.js"}*//
+
 const Editor_Type = {
 	RICH: 0,
 	RAW: 1,
@@ -31,8 +33,8 @@ class AnimatedStatus {
 
 	/* Code related to Animations */
 	load() {
-		this.kSpacing = "15px";
-		this.kMinTimeout = 1;
+		this.kSpacing = "5px";
+		this.kMinTimeout = 1600;
 		this.kDefaultEditor = Editor_Type.RICH;
 
 		this.animation = this.getData("animation") || [];
